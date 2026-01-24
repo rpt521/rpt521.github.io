@@ -1,11 +1,4 @@
 <!doctype html>
-<header>
-  <h1>R. Patrick Todd II</h1>
-  <p>
-    Orlando, FL 
-  </p>  
-</header>
-
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -42,7 +35,6 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Center the content like original layout */
     main {
       max-width: var(--max);
       margin: 44px auto;
@@ -50,8 +42,6 @@
     }
 
     h1, h2 { line-height: 1.2; }
-
-    .lead { font-size: 1.1rem; margin-top: 0.5rem; }
 
     .card {
       background: rgba(255,255,255,0.03);
@@ -62,10 +52,14 @@
       margin: 18px 0;
     }
 
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
     .links a {
       display: inline-block;
-      margin-right: 12px;
-      margin-top: 10px;
       padding: 10px 12px;
       border-radius: 12px;
       border: 1px solid var(--border);
@@ -80,16 +74,8 @@
       text-decoration: none;
     }
 
-    blockquote {
-      border-left: 4px solid rgba(255,255,255,0.14);
-      padding-left: 14px;
-      margin-left: 0;
-      color: var(--text);
-    }
-
     .muted { color: var(--muted); }
 
-    /* Skip link for keyboard and screen reader users */
     .skip-link {
       position: absolute;
       left: -9999px;
@@ -102,40 +88,40 @@
       z-index: 999;
     }
 
-    .skip-link:focus {
-      left: 12px;
-    }
+    .skip-link:focus { left: 12px; }
   </style>
 </head>
 
 <body>
-  <header aria-label="Primary navigation">
-  <nav class="links" style="max-width: 980px; margin: 24px auto 0; padding: 0 18px;">
-    <a href="/projects.html">Projects</a>
-    <a href="/write-ups.html">Write Ups</a>
-    <a href="/resume.html">Resume</a>
-  </nav>
-</header>
-
-  
   <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- This header MUST be inside body -->
+  <header class="card" aria-label="Site identity" style="max-width: 980px; margin: 24px auto 0; padding: 18px 20px;">
+    <h1 style="margin: 0;">R. Patrick Todd II</h1>
+    <p class="muted" style="margin: 8px 0 0 0;">Orlando, FL</p>
+  </header>
+
+  <header aria-label="Primary navigation">
+    <nav class="links" style="max-width: 980px; margin: 16px auto 0; padding: 0 18px;">
+      <a href="/projects.html">Projects</a>
+      <a href="/write-ups.html">Write Ups</a>
+      <a href="/resume.html">Resume</a>
+    </nav>
+  </header>
 
   <main id="main">
     <section class="card" aria-labelledby="journey">
       <h2 id="journey">My Journey Into IT and Cybersecurity</h2>
-      <p>
-        I did not start my career in technology. I earned my way here.
-      </p>
+      <p>I did not start my career in technology. I earned my way here.</p>
       <p>
         I have spent over a decade leading teams, solving real world problems, and being accountable for outcomes in environments where things break loudly and immediately if you get them wrong. Along the way, I realized I was most energized by the systems behind the scenes, how things connect, where they fail, and how to make them more resilient. That curiosity turned into a deliberate career pivot into Information Technology, with a focus on cybersecurity.
       </p>
       <p>
         Today, I am an IT student and cybersecurity practitioner in training, building skills across networking, systems, cloud infrastructure, and security fundamentals. I am especially interested in threat detection, defensive security, and understanding how complex systems fail under real world conditions, not just in textbooks.
       </p>
-        
-        <p class="muted">
-          I may be newer to the field, but I am not new to accountability, pressure, or learning fast when it matters.
-        </p>
+      <p class="muted">
+        I may be newer to the field, but I am not new to accountability, pressure, or learning fast when it matters.
+      </p>
     </section>
 
     <section class="card" aria-labelledby="learning">
@@ -170,3 +156,4 @@
   </main>
 </body>
 </html>
+
