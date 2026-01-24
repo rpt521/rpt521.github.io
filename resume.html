@@ -9,3 +9,421 @@
     <a href="/assets/patrick resume.pdf">Download PDF Resume</a>
   </p>
 </header>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | R. Patrick Todd II</title>
+  <meta name="description" content="Resume for R. Patrick Todd II. IT and cybersecurity student with leadership and technical support experience." />
+
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #111827;
+      --muted: #9ca3af;
+      --text: #e5e7eb;
+      --soft: #1f2937;
+      --accent: #93c5fd;
+      --accent2: #a7f3d0;
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 12px 30px rgba(0,0,0,0.35);
+      --radius: 16px;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(147,197,253,0.18), transparent 60%),
+                  radial-gradient(900px 650px at 85% 20%, rgba(167,243,208,0.14), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 10px;
+      background: #ffffff;
+      color: #111827;
+      padding: 10px 12px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+    .skip-link:focus { left: 12px; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 44px auto;
+      padding: 0 18px;
+    }
+
+    header {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 22px 22px 18px 22px;
+    }
+
+    .topline {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    h1 {
+      font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+
+    .tagline {
+      margin: 10px 0 0 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+
+    .meta {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: 1.35fr 0.65fr;
+        align-items: start;
+      }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.15rem;
+      letter-spacing: 0.2px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.02rem;
+    }
+
+    .sub {
+      color: var(--muted);
+      margin: 4px 0 10px 0;
+      font-size: 0.95rem;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 700px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    li { margin: 7px 0; }
+
+    .kicker {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 10px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .muted { color: var(--muted); }
+
+    .section + .section { margin-top: 14px; }
+
+    footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    .actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .btn:hover { background: rgba(255,255,255,0.07); text-decoration: none; }
+    .btn.primary { border-color: rgba(147,197,253,0.35); background: rgba(147,197,253,0.10); }
+    .btn.primary:hover { background: rgba(147,197,253,0.16); }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="wrap">
+    <header aria-label="Resume header">
+      <div class="topline">
+        <h1>R. Patrick Todd II</h1>
+        <div class="actions" aria-label="Primary actions">
+          <!-- Optional: keep a PDF available as well -->
+          <!-- <a class="btn primary" href="/assets/patrick-todd-resume.pdf">Download PDF</a> -->
+          <a class="btn" href="/">Home</a>
+          <a class="btn" href="/projects.html">Projects</a>
+          <a class="btn" href="/write-ups.html">Write Ups</a>
+        </div>
+      </div>
+
+      <p class="tagline">
+        IT and cybersecurity student with leadership experience in high-pressure environments. Focused on troubleshooting, reliable operations, and developing strong fundamentals in networking, cloud, and detection and response.
+      </p>
+
+      <div class="meta" aria-label="Contact links">
+        <span class="pill">
+          <strong>Phone</strong>
+          <a href="tel:+14077124759">(407) 712 4759</a>
+        </span>
+        <span class="pill">
+          <strong>Email</strong>
+          <a href="mailto:RI385049@ucf.edu">RI385049@ucf.edu</a>
+        </span>
+        <span class="pill">
+          <strong>LinkedIn</strong>
+          <a href="https://www.linkedin.com/in/rpatricktodd/" rel="noopener">linkedin.com/in/rpatricktodd</a>
+        </span>
+      </div>
+    </header>
+
+    <main id="main" class="grid" aria-label="Resume content">
+      <section class="card section" aria-labelledby="summary">
+        <h2 id="summary">Summary</h2>
+        <p>
+          IT and cybersecurity student with extensive experience leading teams, managing projects, and supporting high-pressure technical environments. Skilled in troubleshooting, customer communication, and security best practices, with growing expertise in networking, cloud, and detection and response concepts. Blends hands-on leadership experience as a foreman with academic training in modern cybersecurity tools and frameworks. Committed to developing into a security engineer or analyst delivering reliable, high-impact solutions.
+        </p>
+
+        <div class="two-col" aria-label="Highlights">
+          <div>
+            <p class="kicker"><strong>Strengths</strong></p>
+            <ul>
+              <li>Structured diagnostics and root cause troubleshooting</li>
+              <li>Leadership, workflow planning, and operational documentation</li>
+              <li>Customer communication in technical contexts</li>
+              <li>Security fundamentals with a practical, systems-first mindset</li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="kicker"><strong>Interests</strong></p>
+            <ul>
+              <li>Blue team operations and detection engineering</li>
+              <li>Network security monitoring and incident triage</li>
+              <li>Cloud security fundamentals and identity access control</li>
+              <li>Building repeatable processes and reliable tooling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card section" aria-label="Skills and certifications">
+        <h2>Skills</h2>
+
+        <p class="muted">Programming and scripting</p>
+        <div class="skill-list" aria-label="Programming skills">
+          <span class="chip">C</span>
+          <span class="chip">Python</span>
+          <span class="chip">PowerShell</span>
+          <span class="chip">SQL</span>
+        </div>
+
+        <p class="muted" style="margin-top: 14px;">Platforms and tools</p>
+        <div class="skill-list" aria-label="Platforms and tools">
+          <span class="chip">Linux</span>
+          <span class="chip">Kali Linux</span>
+          <span class="chip">Wireshark</span>
+          <span class="chip">Security Onion</span>
+          <span class="chip">pfSense</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Azure</span>
+        </div>
+
+        <p class="muted" style="margin-top: 14px;">Professional strengths</p>
+        <div class="skill-list" aria-label="Professional skills">
+          <span class="chip">Leadership</span>
+          <span class="chip">Problem solving</span>
+          <span class="chip">Adaptability</span>
+          <span class="chip">Collaboration</span>
+          <span class="chip">Project management</span>
+        </div>
+
+        <h2 style="margin-top: 18px;">Certifications</h2>
+        <div class="skill-list" aria-label="Certifications">
+          <span class="chip">CompTIA ITF+</span>
+          <span class="chip">CompTIA A+</span>
+        </div>
+      </aside>
+
+      <section class="card section" aria-labelledby="education">
+        <h2 id="education">Education</h2>
+
+        <article aria-label="University of Central Florida">
+          <h3>University of Central Florida, College of Engineering and Computer Science</h3>
+          <p class="sub">Orlando, FL · GPA 3.7 · Expected May 2026</p>
+          <ul>
+            <li>Relevant coursework: CS, Security, Networking, Advanced C, Java</li>
+          </ul>
+        </article>
+
+        <article style="margin-top: 14px;" aria-label="New Horizons program">
+          <h3>New Horizons Computer Learning Centers, Cyber Security Professional Program</h3>
+          <p class="sub">Tampa, FL · May to August 2023</p>
+          <ul>
+            <li>Program coverage included ITF+, A+, Network+, Security+ certification preparation</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card section" aria-labelledby="experience">
+        <h2 id="experience">Professional Experience</h2>
+
+        <article aria-label="Collegiate Cyber Defense Club experience">
+          <h3>Collegiate Cyber Defense Club (CCDC), Operations Support</h3>
+          <p class="sub">Orlando, FL · August 2024 to Present</p>
+          <ul>
+            <li>Coordinated on-site logistics and registration for more than 50 hackathon participants to ensure efficient check-in and event flow.</li>
+            <li>Co-planned secure and orderly handling of participant information.</li>
+          </ul>
+          <p class="kicker"><strong>KnightSec</strong></p>
+          <ul>
+            <li>HackTheBox, TryHackMe, and CTF participation.</li>
+          </ul>
+        </article>
+
+        <article style="margin-top: 16px;" aria-label="Emerald Plumbing experience">
+          <h3>Emerald Plumbing, Lead Foreman, Certified Gas Technician, Sales</h3>
+          <p class="sub">Orlando, FL · August 2019 to December 2023</p>
+          <ul>
+            <li>Led a technical team of 5 to 10 staff and improved workflow efficiency by 20 percent through structured task assignments and performance oversight.</li>
+            <li>Completed 8 to 12 system diagnostics per day and resolved more than 90 percent of issues on first contact using root cause troubleshooting methods.</li>
+            <li>Coordinated with more than 10 contractors each month to validate requirements and ensure correct execution of technical specifications.</li>
+            <li>Maintained and tested hundreds of systems and improved operational reliability by 15 percent through standardized procedures and detailed documentation.</li>
+            <li>Produced diagnostic logs and service documentation, reducing troubleshooting time by 10 to 15 percent.</li>
+          </ul>
+        </article>
+
+        <article style="margin-top: 16px;" aria-label="Verizon experience">
+          <h3>Verizon, Technical Support and Sales</h3>
+          <p class="sub">Orlando, FL · June 2017 to July 2019</p>
+          <ul>
+            <li>Resolved 70 to 80 percent of technical issues without escalation using structured diagnostics aligned with Tier 1 and Tier 2 support methods.</li>
+            <li>Managed more than 50 business and consumer accounts, advising on configuration, connectivity, and device security best practices.</li>
+            <li>Stayed current with weekly software and network updates and reduced troubleshooting time by 20 percent.</li>
+            <li>Collaborated with technicians to identify hardware and software failures, shortening repair turnaround by one to two days.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card section" aria-labelledby="projects">
+        <h2 id="projects">Independent Project Experience</h2>
+
+        <article aria-label="Oviedo Helping Hand">
+          <h3>Oviedo Helping Hand, Director, Web Developer</h3>
+          <p class="sub">January 2020 to Present</p>
+          <ul>
+            <li>Maintained website content across more than 20 pages and ensured uptime using CMS tools and basic site administration.</li>
+            <li>Led 3 to 5 technical and community projects yearly, submitting deliverables on schedule using project planning.</li>
+            <li>Created documentation and operating procedures that reduced volunteer onboarding time by 35 percent.</li>
+          </ul>
+        </article>
+
+        <article style="margin-top: 16px;" aria-label="The Hope Foundation">
+          <h3>The Hope Foundation, Project Manager, Donation Procurement</h3>
+          <p class="sub">Oviedo, FL</p>
+          <ul>
+            <li>Managed logistics for more than 100 deliveries monthly and improved routing accuracy by 15 percent through process optimization.</li>
+            <li>Oversaw procurement and distribution of more than 2,000 pounds of food monthly while applying inventory tracking principles similar to IT asset management.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p class="muted">
+        This HTML resume is derived from the PDF resume content and is intentionally formatted for readability and accessibility. :contentReference[oaicite:1]{index=1}
+      </p>
+    <
