@@ -101,18 +101,12 @@
       border-radius: 999px;
     }
 
+    /* OPTION A: always one column */
     .grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 16px;
       margin-top: 16px;
-    }
-
-    @media (min-width: 900px) {
-      .grid {
-        grid-template-columns: 1.35fr 0.65fr;
-        align-items: start;
-      }
     }
 
     .card {
@@ -225,7 +219,7 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <div class="wrap">
-     <header aria-label="Resume header">
+    <header aria-label="Resume header">
       <div class="topline">
         <div>
           <h1>R. Patrick Todd II</h1>
@@ -237,8 +231,9 @@
           <a class="btn" href="/">Home</a>
           <a class="btn" href="/projects.html">Projects</a>
         </div>
+      </div>
+
       <div class="meta" aria-label="Contact links">
-        
         <span class="pill">
           <strong>Email</strong>
           <a href="mailto:RI385049@ucf.edu">RI385049@ucf.edu</a>
@@ -385,7 +380,7 @@
           <h3>Oviedo Helping Hand, Director, Web Developer</h3>
           <p class="sub">January 2020 to Present</p>
           <ul>
-            <li>Maintained website content across more than 20 pages and ensured uptime using CMS tools and basic site administration.</li>
+            <li>Maintained website content and ensured uptime using CMS tools and basic site administration.</li>
             <li>Led 3 to 5 technical and community projects yearly, submitting deliverables on schedule using project planning.</li>
             <li>Created documentation and operating procedures that reduced volunteer onboarding time by 35 percent.</li>
           </ul>
@@ -404,6 +399,9 @@
 
     <footer>
       <p class="muted">
-        This HTML resume is derived from the PDF resume content and is intentionally formatted for readability and accessibility. :contentReference[oaicite:1]{index=1}
+        This HTML resume is derived from the PDF resume content and is intentionally formatted for readability and accessibility.
       </p>
-    
+    </footer>
+  </div>
+</body>
+</html>
