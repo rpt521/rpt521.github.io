@@ -11,151 +11,100 @@
   </header>
 
   <main>
-    <form action="thankyou.html" method="get">
-      <table border="1">
-        <tbody>
-          <tr>
-            <td colspan="2"><h2>Contact Information</h2></td>
-          </tr>
 
-          <tr>
-            <td><label for="name"><strong>Name:</strong></label></td>
-            <td><input id="name" name="name" type="text" required></td>
-          </tr>
+    
+    <table border="1" width="100%">
+      <tbody>
 
-          <tr>
-            <td><label for="phone"><strong>Phone:</strong></label></td>
-            <td><input id="phone" name="phone" pattern="[0-9]{10}" type="tel" required></td>
-          </tr>
+        
+        <tr>
+          <td colspan="2">
+            <form action="thankyou.html" method="get">
+              <table border="0" width="100%">
+                <tbody>
+                  <tr>
+                    <td colspan="2"><h2>Contact Information</h2></td>
+                  </tr>
 
-          <tr>
-            <td><label for="email"><strong>Email:</strong></label></td>
-            <td><input id="email" name="email" type="email" required></td>
-          </tr>
+                  <tr>
+                    <td><label for="name"><strong>Name:</strong></label></td>
+                    <td><input id="name" name="name" type="text" required></td>
+                  </tr>
 
-          <tr>
-            <td colspan="2"><h2>Select Pizza Size</h2></td>
-          </tr>
+                  <tr>
+                    <td><label for="phone"><strong>Phone:</strong></label></td>
+                    <td><input id="phone" name="phone" pattern="[0-9]{10}" type="tel" required></td>
+                  </tr>
 
-          <tr>
-            <td><label for="size"><strong>Pizza Size:</strong></label></td>
-            <td>
-              <select id="size" name="size" required>
-                <option value="">-- Select Size --</option>
-                <option value="Medium">Medium</option>
-                <option value="Large">Large</option>
-                <option value="XLarge">XLarge</option>
-              </select>
-            </td>
-          </tr>
+                  <tr>
+                    <td><label for="email"><strong>Email:</strong></label></td>
+                    <td><input id="email" name="email" type="email" required></td>
+                  </tr>
 
-          <tr>
-            <td colspan="2"><h2>Select Sauce</h2></td>
-          </tr>
+                  <tr>
+                    <td colspan="2"><h2>Select Pizza Size</h2></td>
+                  </tr>
 
-          <tr>
-            <td colspan="2">
-              <input type="radio" id="marinara" name="sauce" value="Marinara" required>
-              <label for="marinara">Marinara</label><br>
+                  <tr>
+                    <td><label for="size"><strong>Pizza Size:</strong></label></td>
+                    <td>
+                      <select id="size" name="size" required>
+                        <option value="">-- Select Size --</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="XLarge">XLarge</option>
+                      </select>
+                    </td>
+                  </tr>
 
-              <input type="radio" id="ranch" name="sauce" value="Ranch">
-              <label for="ranch">Ranch</label><br>
+                  <tr>
+                    <td colspan="2"><h2>Select Sauce</h2></td>
+                  </tr>
 
-              <input type="radio" id="none" name="sauce" value="No Sauce">
-              <label for="none">No Sauce</label>
-            </td>
-          </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="radio" id="marinara" name="sauce" value="Marinara" required>
+                      <label for="marinara">Marinara</label><br>
 
-          <tr>
-            <td colspan="2"><h2>Select Toppings</h2></td>
-          </tr>
+                      <input type="radio" id="ranch" name="sauce" value="Ranch">
+                      <label for="ranch">Ranch</label><br>
 
-          <tr>
-            <td colspan="2">
-              <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
-              <label for="pepperoni">Pepperoni</label>
+                      <input type="radio" id="none" name="sauce" value="No Sauce">
+                      <label for="none">No Sauce</label>
+                    </td>
+                  </tr>
 
-              <input type="checkbox" id="sausage" name="toppings" value="Sausage">
-              <label for="sausage">Sausage</label><br>
+                  <tr>
+                    <td colspan="2"><h2>Select Toppings</h2></td>
+                  </tr>
 
-              <input type="checkbox" id="mushroom" name="toppings" value="Mushroom">
-              <label for="mushroom">Mushroom</label>
+                  <tr>
+                    <td colspan="2">
+                      <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                      <label for="pepperoni">Pepperoni</label>
 
-              <input type="checkbox" id="pineapple" name="toppings" value="Pineapple">
-              <label for="pineapple">Pineapple</label><br>
+                      <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+                      <label for="sausage">Sausage</label><br>
 
-              <input type="checkbox" id="peppers" name="toppings" value="Peppers">
-              <label for="peppers">Peppers</label>
+                      <input type="checkbox" id="mushroom" name="toppings" value="Mushroom">
+                      <label for="mushroom">Mushroom</label>
 
-              <input type="checkbox" id="onions" name="toppings" value="Onions">
-              <label for="onions">Onions</label>
-            </td>
-          </tr>
+                      <input type="checkbox" id="pineapple" name="toppings" value="Pineapple">
+                      <label for="pineapple">Pineapple</label><br>
 
-          <tr>
-            <td colspan="2"><h2>Additional Instructions</h2></td>
-          </tr>
+                      <input type="checkbox" id="peppers" name="toppings" value="Peppers">
+                      <label for="peppers">Peppers</label>
 
-          <tr>
-            <td colspan="2">
-              <textarea name="comments">Original Message</textarea><br>
-              <input type="submit" value="Submit!">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
+                      <input type="checkbox" id="onions" name="toppings" value="Onions">
+                      <label for="onions">Onions</label>
+                    </td>
+                  </tr>
 
-    <section>
-      <h2>Favorite Video Games</h2>
+                  <tr>
+                    <td colspan="2"><h2>Additional Instructions</h2></td>
+                  </tr>
 
-      <table border="1">
-        <caption>List of My Favorite Games</caption>
-
-        <thead>
-          <tr>
-            <th colspan="3">Top Picks</th>
-          </tr>
-          <tr>
-            <th>Developer</th>
-            <th>Title</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th rowspan="3">Nintendo</th>
-            <td>The Legend of Zelda: A Link To The Past</td>
-            <td>1991</td>
-          </tr>
-          <tr>
-            <td>The Legend of Zelda: Ocarina of Time</td>
-            <td>1998</td>
-          </tr>
-          <tr>
-            <td>The Legend of Zelda: Majora's Mask</td>
-            <td>2000</td>
-          </tr>
-          <tr>
-            <th>Square</th>
-            <td>Final Fantasy X</td>
-            <td>2001</td>
-          </tr>
-          <tr>
-            <th>Square Enix, Square, Disney</th>
-            <td>Kingdom Hearts</td>
-            <td>2002</td>
-          </tr>
-        </tbody>
-
-        <tfoot>
-          <tr>
-            <td colspan="3"><strong>Count:</strong> 5</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-  </main>
-</body>
-</html>
+                  <tr>
+                    <td colspan="2">
+                      <textarea name="comments">Original Message</textarea><br>
+                      <input type="submit" value="Submit!">
