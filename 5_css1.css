@@ -67,7 +67,7 @@ ol {
 
 ol li {
     margin-bottom: 6px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* =========================
@@ -124,7 +124,7 @@ th {
     margin: 10px 5px 12px 32px;
     width: fit-content;
     max-width: 900px;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 /* =========================
