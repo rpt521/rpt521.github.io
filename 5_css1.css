@@ -116,13 +116,13 @@ th {
 /* =========================
    Green bordered container
    ========================= */
-.green-box {
+#paragraph2 {
     border: 4px solid #2f7f2f;
+    background-color: #ffffff;
     padding: 3px 32px;
     margin: 8px 5px 12px 32px;
     width: fit-content;
     max-width: 900px;
-    background-color: #ffffff;
 }
 
 /* =========================
