@@ -73,8 +73,8 @@ ol li {
 /* =========================
    Links
    ========================= */
-a.red-link {
-    color: #800020;
+p a {
+    color: #800020; /*red link*/
     text-decoration: underline;
 }
 
