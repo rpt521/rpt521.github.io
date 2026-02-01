@@ -65,9 +65,16 @@
         }
 
         /*links*/
-        a {
-            color: #b7410e;
-            text-decoration: underline;
+        /* Red links */
+        a.red-link {
+        color: #800020; /* burgundy red */
+        text-decoration: underline;
+        }
+
+        /* Traditional blue links */
+        a.blue-link {
+        color: #0000EE; /* classic link blue */
+        text-decoration: underline;
         }
 
         a:visited {
@@ -185,20 +192,22 @@
         <h2>Lists, Links, and Tables</h2>
 
         <ol>
-            <li><a href="##">Item 1</a></li>
-            <li><a href="##">Item 2</a></li>
-            <li><a href="##">Item 3</a></li>
-            <li><a href="##">Item 4</a></li>
-            <li><a href="##">Item 5</a></li>
+            <a href="#" class="blue-link">Item 1</a>
+            <a href="#" class="blue-link">Item 2</a>
+            <a href="#" class="blue-link">Item 3</a>
+            <a href="#" class="blue-link">Item 4</a>
+            <a href="#" class="blue-link">Item 5</a>
         </ol>
 
         <section>
             <h3>Common HTML Tags</h3>
 
-            <p>
-                <a href="https://www.w3schools.com" target="_blank">W3schools.com</a>
-                has a great resource for HTML, CSS, and JavaScript!
-            </p>
+        <p>
+        <a href="https://www.w3schools.com" target="_blank" class="red-link">
+            W3schools.com
+        </a>
+        has a great resource for HTML, CSS, and JavaScript!
+        </p>
 
             <table>
                 <tr>
@@ -233,6 +242,7 @@
 
 </body>
 </html>
+
 
 
 
