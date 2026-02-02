@@ -6,7 +6,7 @@
     --font-h3: 18px;           /* subsection headers */
     --font-link: 14px;         /* links */
     --font-table: 10px;        /* table cell text */
-    --font-greenbox: 10px;     /* #paragraph2 text (optional override) */
+    --font-greenbox: 12px;     /* #paragraph2 text (optional override) */
 }
 
 /* css styles */
