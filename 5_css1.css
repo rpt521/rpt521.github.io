@@ -4,9 +4,9 @@
     --font-h1: 44px;           /* main header */
     --font-h2: 24px;           /* section headers */
     --font-h3: 18px;           /* subsection headers */
-    --font-link: 10px;         /* links */
+    --font-link: 14px;         /* links */
     --font-table: 10px;        /* table cell text */
-    --font-greenbox: 8px;     /* #paragraph2 text (optional override) */
+    --font-greenbox: 10px;     /* #paragraph2 text (optional override) */
 }
 
 /* css styles */
