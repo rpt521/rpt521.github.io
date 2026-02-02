@@ -85,6 +85,7 @@ table {
     margin-top: 10px;
     width: 650px;
     background-color: #ffffff;
+    text-size: 10px;
 }
 
 th,
@@ -98,6 +99,7 @@ td {
 th {
     background-color: #d0d0d0;
     font-weight: bold;
+    
 }
 
 /* green container*/
