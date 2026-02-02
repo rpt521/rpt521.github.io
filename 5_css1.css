@@ -1,14 +1,31 @@
-/* page style css*/
+/*font sizes */
+:root {
+    --font-body: 14px;         /* default page text */
+    --font-h1: 48px;           /* main header */
+    --font-h2: 26px;           /* section headers */
+    --font-h3: 18px;           /* subsection headers */
+    --font-link: 14px;         /* links */
+    --font-table: 10px;        /* table cell text */
+    --font-greenbox: 12px;     /* #paragraph2 text (optional override) */
+}
+
+/* =========================
+   PAGE STYLE CSS
+   ========================= */
 body {
     margin: 0;
     padding: 0;
     background-color: #b9dfe9;
     color: #000;
+
+    /* base typography */
     font-family: "Times New Roman", Times, serif;
-    
+    font-size: var(--font-body);
 }
 
-/* h */
+/* =========================
+   HEADINGS
+   ========================= */
 h1,
 h2,
 h3 {
@@ -16,53 +33,39 @@ h3 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: var(--font-h1);
     text-align: center;
     margin: 20px 0;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: var(--font-h2);
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: var(--font-h3);
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-/* p */
+/* =========================
+   PARAGRAPHS
+   ========================= */
 p {
-    font-size: 14px;
+    font-size: var(--font-body);
     line-height: 1.4;
     margin-bottom: 15px;
 }
 
-/* bluebackground text*/
-.blue {
-    background-color: #160879;
-    color: #ffffff;
-    padding: 12px 14px;
-    margin-bottom: 15px;
+/* links */
+a {
+    font-size: var(--font-link);
 }
 
-/* list */
-ol {
-    margin-left: 20px;
-    padding-left: 8px;
-    list-style-type: decimal-leading-zero;
-}
-
-ol li {
-    margin-bottom: 6px;
-    font-size: 14px;
-}
-
-/*links*/
 p a {
-    color: #800020; /*red link*/
+    color: #800020; /* red link */
     text-decoration: underline;
 }
 
@@ -79,13 +82,41 @@ a:hover {
     color: #cc0000;
 }
 
-/* tables*/
+/* text with blue background */
+.blue {
+    background-color: #160879;
+    color: #ffffff;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+
+    /* optional: keep it same as body */
+    font-size: var(--font-body);
+}
+
+/*list */
+ol {
+    margin-left: 20px;
+    padding-left: 8px;
+    list-style-type: decimal-leading-zero;
+
+    /* optional: if you want list text tied to body size */
+    font-size: var(--font-body);
+}
+
+ol li {
+    margin-bottom: 6px;
+    font-size: var(--font-body);
+}
+
+/* tables */
 table {
     border-collapse: collapse;
     margin-top: 10px;
     width: 450px;
     background-color: #ffffff;
-    
+
+    /* optional: sets table-wide font size too */
+    font-size: var(--font-table);
 }
 
 th,
@@ -94,16 +125,20 @@ td {
     padding: 6px 10px;
     text-align: left;
     vertical-align: top;
-    font-size: 10px;
+
+    /* main control for table text */
+    font-size: var(--font-table);
 }
 
 th {
     background-color: #d0d0d0;
     font-weight: bold;
-    
+
+    /* optional: slightly larger header text */
+    /* font-size: calc(var(--font-table) + 1px); */
 }
 
-/* green container*/
+/* green container */
 #paragraph2 {
     border: 4px solid #2f7f2f;
     background-color: #ffffff;
@@ -111,10 +146,12 @@ th {
     margin: 10px 5px 12px 32px;
     width: fit-content;
     max-width: 600px;
-    font-size: 12px;
+
+    /* optional: independent control */
+    font-size: var(--font-greenbox);
 }
 
-/* spacing*/
+/*spacing */
 article {
     margin-bottom: 40px;
     padding-left: 4px;
