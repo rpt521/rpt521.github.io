@@ -85,7 +85,7 @@ table {
     margin-top: 10px;
     width: 450px;
     background-color: #ffffff;
-    text-size: 12px;
+    
 }
 
 th,
@@ -94,6 +94,7 @@ td {
     padding: 6px 10px;
     text-align: left;
     vertical-align: top;
+    text-size: 10px;
 }
 
 th {
