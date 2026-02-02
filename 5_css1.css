@@ -1,12 +1,12 @@
 /*font sizes */
 :root {
-    --font-body: 10px;         /* default page text */
+    --font-body: 8px;         /* default page text */
     --font-h1: 44px;           /* main header */
     --font-h2: 24px;           /* section headers */
     --font-h3: 18px;           /* subsection headers */
-    --font-link: 12px;         /* links */
+    --font-link: 10px;         /* links */
     --font-table: 10px;        /* table cell text */
-    --font-greenbox: 10px;     /* #paragraph2 text (optional override) */
+    --font-greenbox: 8px;     /* #paragraph2 text (optional override) */
 }
 
 /* css styles */
