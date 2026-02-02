@@ -1,17 +1,15 @@
 /*font sizes */
 :root {
-    --font-body: 12px;         /* default page text */
-    --font-h1: 46px;           /* main header */
-    --font-h2: 26px;           /* section headers */
+    --font-body: 10px;         /* default page text */
+    --font-h1: 44px;           /* main header */
+    --font-h2: 24px;           /* section headers */
     --font-h3: 18px;           /* subsection headers */
     --font-link: 12px;         /* links */
     --font-table: 10px;        /* table cell text */
-    --font-greenbox: 11px;     /* #paragraph2 text (optional override) */
+    --font-greenbox: 10px;     /* #paragraph2 text (optional override) */
 }
 
-/* =========================
-   PAGE STYLE CSS
-   ========================= */
+/* css styles */
 body {
     margin: 0;
     padding: 0;
@@ -23,9 +21,7 @@ body {
     font-size: var(--font-body);
 }
 
-/* =========================
-   HEADINGS
-   ========================= */
+/*h*/
 h1,
 h2,
 h3 {
@@ -50,9 +46,7 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* =========================
-   PARAGRAPHS
-   ========================= */
+/* p*/
 p {
     font-size: var(--font-body);
     line-height: 1.4;
