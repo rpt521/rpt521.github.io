@@ -1,6 +1,6 @@
 /*font sizes */
 :root {
-    --font-body: 8px;         /* default page text */
+    --font-body: 12px;         /* default page text */
     --font-h1: 44px;           /* main header */
     --font-h2: 24px;           /* section headers */
     --font-h3: 18px;           /* subsection headers */
