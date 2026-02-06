@@ -33,7 +33,7 @@ body{
 
   width: var(--jump-w);
   height: 100vh;
-  overflow-y: auto;
+  
 
   background: var(--jump-bg);
   padding: 20px 14px;
