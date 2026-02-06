@@ -30,27 +30,50 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-
   width: var(--jump-w);
   height: 100vh;
   
+overflow: hidden;
 
   background: var(--jump-bg);
-  padding: 20px 14px;
+  padding: 14px 10px;
+
+ 
+  display: flex;
+  flex-direction: column;
 }
 
+/* Heading compresses with viewport height */
 #jumpMenu h2{
-  margin: 0 0 18px 0;
-  font-size: 34px;
+  margin: 0 0 clamp(8px, 1.8vh, 18px) 0;
+  font-size: clamp(18px, 3.2vh, 34px);
   line-height: 1.1;
   text-align: center;
 }
 
+/* Links compress: smaller font + tighter vertical padding */
 #jumpMenu a{
   display: block;
-  padding: 14px 6px;
-  font-size: 22px;
   color: #1b1bff;
+
+  /* font shrinks as window height shrinks */
+  font-size: clamp(12px, 2.1vh, 22px);
+
+  /* vertical spacing shrinks as window height shrinks */
+  padding: clamp(4px, 1.1vh, 14px) 4px;
+
+  text-decoration: underline;
+}
+
+
+@media (max-height: 620px){
+  #jumpMenu{
+    padding: 10px 8px;
+  }
+  #jumpMenu a{
+    font-size: 12px;
+    padding: 4px 2px;
+  }
 }
 
 /*main offste for alignment and boundaries*/
