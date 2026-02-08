@@ -88,7 +88,7 @@ body{
 
 /* When user hovers a navigation button, background color changes */
 #menuItems button:hover{
-  background: #1026b9;
+  background: #f5ec49;
 }
 
 /* Treat #jumpMenu (ul) as a dropdown submenu */
