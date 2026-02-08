@@ -161,9 +161,7 @@ body{
   }
 }
 
-/* =========================================
-   MAIN LAYOUT OFFSETS (clear sidebar + header)
-   ========================================= */
+/* main layout */
 
 main{
   margin-left: var(--jump-w);      /* clears the left sidebar */
@@ -268,7 +266,7 @@ h1{
   height: 16px;
   margin-left: 6px;
   vertical-align: -2px;
-  background-image: url("arrowarrow.png");
+  background-image: url("assets/screenshots/arrowarrow.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
