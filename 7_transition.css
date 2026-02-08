@@ -27,10 +27,16 @@ body{
   background: var(--page-bg);
 }
 
-/* first letter larger */
-p::first-letter{
+/* BIG first letter ONLY for the first paragraph in each article */
+#container article p:first-of-type::first-letter{
   font-size: 36px;
   font-weight: bold;
+}
+
+/* Ensure all other paragraphs (including the "Read more..." <p>) stay normal */
+#container article p:not(:first-of-type)::first-letter{
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 
@@ -233,21 +239,31 @@ h1{
   color: #111;
 }
 
-/* arrowarrow.png for read more links */
+#container article p:last-of-type{
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+  font-size: 14px; /* keeps it consistent */
+  color: inherit;
+}
 
-#container a[href*="google.com"]{
+/* Arrow after Google link */
+#container article p:last-of-type a[href*="google.com"]{
+  display: inline-block;
   color: #1b1bff;
   text-decoration: underline;
 }
 
-#container a[href*="google.com"]::after{
+#container article p:last-of-type a[href*="google.com"]::after{
   content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-left: 6px;
   vertical-align: -2px;
-  background: url("arrowarrow.png") no-repeat center / contain;
+  background-image: url("arrowarrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* thank you fixed to bottom right */
