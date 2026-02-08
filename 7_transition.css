@@ -260,16 +260,13 @@ h1{
 }
 
 #container article p:last-of-type a[href*="google.com"]::after{
-  content: "";
+  content: url("/assets/screenshots/arrowarrow.png");
   display: inline-block;
-  width: 16px;
-  height: 16px;
   margin-left: 6px;
-  vertical-align: -2px;
-  background-image: url("assets/screenshots/arrowarrow.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  vertical-align: middle;
+
+  width: 1em;
+  height: 1em;
 }
 
 /* thank you fixed to bottom right */
