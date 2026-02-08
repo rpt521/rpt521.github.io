@@ -62,8 +62,9 @@ body{
 
 /* Style the nav buttons */
 #menuItems button{
+  display: block;
   width: 100%;
-  border: 0;
+  border: none;
   cursor: pointer;
 
   background: var(--btn-bg);
@@ -71,12 +72,19 @@ body{
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(12px, 2.1vh, 18px);
-  padding: clamp(6px, 1.2vh, 12px) 6px;
+  padding: 14px 6px;
 
-  border-radius: 6px;
-
+  border-radius: 0;        /* square corners */
+  margin: 0;               /* removes spacing gaps */
   transition: background-color 0.25s ease, color 0.25s ease;
+
 }
+
+#menuItems button{
+  margin-bottom: 2px;
+}
+
+ 
 
 /* When user hovers a navigation button, background color changes */
 #menuItems button:hover{
