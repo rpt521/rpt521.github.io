@@ -33,7 +33,7 @@ body{
   font-weight: bold;
 }
 
-/* Ensure all other paragraphs (including the "Read more..." <p>) stay normal */
+
 #container article p:not(:first-of-type)::first-letter{
   font-size: inherit;
   font-weight: inherit;
@@ -146,7 +146,7 @@ body{
   opacity: 1;
 }
 
-/* Optional: tighter layout for short viewport heights */
+/* tighter layout for short viewport heights */
 @media (max-height: 620px){
   #menuItems{
     padding: 10px 8px;
