@@ -33,6 +33,7 @@ function runForLoop() {
 	}
 
 	document.getElementById("forLoopResult").textContent = output;
+}
 
 function showOddNumbers() {
 	if (count < 1) {
@@ -48,6 +49,7 @@ function showOddNumbers() {
         if (i % 2 !== 0) {   // checks if odd
             output += i + " ";
         }
+	}
 
     document.getElementById("oddNumberResult").textContent = output;
 	}
@@ -118,4 +120,5 @@ function changeColor(num) {
 
     para.style.color = colors[num];
 }
+
 
