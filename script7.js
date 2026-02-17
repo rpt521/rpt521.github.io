@@ -103,9 +103,9 @@ function loadCar(num) {
         selectedCar = carObject3;
     }
 
-    document.getElementById("carType").value = selectedCar.cType;
-    document.getElementById("carMPG").value = selectedCar.cMPG;
-    document.getElementById("carColor").value = selectedCar.cColor;
+    document.getElementById("carType").value = selectedCar.type;
+    document.getElementById("carMPG").value = selectedCar.mpg;
+    document.getElementById("carColor").value = selectedCar.color;
 }
 
 function changeColor(num) {
@@ -120,6 +120,7 @@ function changeColor(num) {
 
     para.style.color = colors[num];
 }
+
 
 
 
