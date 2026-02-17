@@ -28,7 +28,7 @@ function runForLoop() {
 	
 	let output = "";
 	
-	for (i = 0, i <= count, i++) {
+	for (i = 0; i <= count; i++) {
 		output += i + " ";
 	}
 
@@ -120,5 +120,6 @@ function changeColor(num) {
 
     para.style.color = colors[num];
 }
+
 
 
