@@ -4,7 +4,7 @@
 let count = 0;
 
 //increase function tickup
-functoin tickUp() {
+function tickUp() {
 	count = count + 1;
 	updateDisplay();
 }
@@ -19,4 +19,5 @@ function tickDown() {
 function updateDisplay() {
 	document.getElementById("counter").textContent = count;
 }
+
 
