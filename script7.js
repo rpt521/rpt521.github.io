@@ -20,4 +20,17 @@ function updateDisplay() {
 	document.getElementById("counter").textContent = count;
 }
 
+function runForLoop() {
+	if (count < 0) {
+        document.getElementById("forLoopResult").textContent = "Counter is negative";
+        return;
+    }
+	
+	let output = "";
+	
+	for (i = 0, i <= count, i++) {
+		output += i + " ";
+	}
+
+	document.getElementById("forLoopResult").textContent = output;
 
