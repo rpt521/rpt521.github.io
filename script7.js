@@ -49,10 +49,8 @@ function showOddNumbers() {
             output += i + " ";
         }
 
-    }
-
     document.getElementById("oddNumberResult").textContent = output;
-}
+	}
 
 function addMultiplesToArray() {
 
@@ -120,3 +118,4 @@ function changeColor(num) {
 
     para.style.color = colors[num];
 }
+
