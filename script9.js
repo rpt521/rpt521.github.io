@@ -128,4 +128,6 @@ function addNewArticle() {
 
     // Keep current filters applied after adding
     filterArticles();
+
+    showFilter();
 }
