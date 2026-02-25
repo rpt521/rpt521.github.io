@@ -50,7 +50,7 @@ h1 {
 
 /* Image area */
 .image-area {
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,8 +58,10 @@ h1 {
 }
 
 .image-area img {
-    max-height: 100%;
-    max-width: 100%;
+    width: 220px;
+    height: 220px;
+    image-rendering: pixelated;
+    object-fit: contain;
 }
 
 /* Audio area: centered pill around the controls */
