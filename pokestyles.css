@@ -106,3 +106,52 @@ h1 {
 .action-area button {
     padding: 8px 18px;
 }
+
+.team-area{
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.team-area h2{
+  margin: 0 0 10px 0;
+  font-weight: normal;
+}
+
+.team-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.team-card{
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.team-card img{
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.team-card .name{
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.team-card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
