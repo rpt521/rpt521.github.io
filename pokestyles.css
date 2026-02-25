@@ -16,7 +16,7 @@ body {
 
 /* Main white container */
 .container {
-    background-color: #f3f3f3;
+    background-color: #ffffff;
     width: 750px;
     padding: 40px 30px 50px 30px;
     border-radius: 45px;
@@ -64,6 +64,7 @@ h1 {
 
 /* Audio */
 .audio-area {
+    background-color: #f3f3f3;
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
