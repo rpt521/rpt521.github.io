@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8fb6c3; /* soft blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main white container */
+.container {
+    background-color: #f3f3f3;
+    width: 750px;
+    padding: 40px 30px 50px 30px;
+    border-radius: 45px;
+    border: 6px solid #d39c1f; /* gold border */
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+/* Search row */
+.search-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-row input {
+    width: 210px;
+    padding: 6px;
+}
+
+.search-row button {
+    padding: 6px 12px;
+}
+
+/* Image area */
+.image-area {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image-area img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Audio */
+.audio-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+/* Moves grid */
+.moves-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 30px;
+    width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.moves-grid select {
+    padding: 6px;
+}
+
+/* Add button */
+.action-area {
+    display: flex;
+    justify-content: center;
+}
+
+.action-area button {
+    padding: 8px 18px;
+}
