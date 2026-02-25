@@ -22,6 +22,7 @@ const moveSelects = [
   document.getElementById("move4"),
 ];
 
+const teamArea = document.querySelector(".team-area");
 const addToTeamBtn = document.getElementById("addToTeamBtn");
 const teamListEl = document.getElementById("teamList"); // exists after you add team area
 
@@ -311,6 +312,9 @@ addToTeamBtn.addEventListener("click", () => {
     sprite: chooseSprite(currentPokemon),
     moves: selectedMoves,
   });
+  if (team.length === 1) {
+  teamArea.style.display = "block";
+}
 
   renderTeam();
 });
