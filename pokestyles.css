@@ -160,4 +160,6 @@ h1 {
   margin: 0;
   text-align: left;
   font-size: 14px;
+  min-width: 0;
+  max-width: 100%;
 }
