@@ -121,45 +121,53 @@ h1 {
   font-weight: normal;
 }
 
+/* Grid: 3 per row */
 .team-list{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 14px;
-  width: fit-content;                   /* keeps the grid compact */
-  margin: 10px auto 0 auto;             /* centers the whole grid */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: fit-content;
+  margin: 12px auto 0 auto;
   justify-content: center;
 }
 
+/* Card */
 .team-card{
   display: flex;
   align-items: center;
-  justify-content: center;   /* centers image + moves together */
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 12px;
 
-  padding: 14px 18px;
+  padding: 10px 14px;
   border-radius: 16px;
   background: #f5f5f5;
   border: 1px solid #ddd;
 
-  width: 250px;       
-  margin: 0 auto;            /* center inside section */
+  width: 320px;
+  margin: 0 auto;
 }
 
+/* Sprite */
 .team-card img{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   image-rendering: pixelated;
-  flex-shrink: 0;   /* prevents squishing */
+  flex-shrink: 0;
 }
 
-
-
+/* Moves column */
 .team-card ul{
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
   font-size: 14px;
+
+  flex: 1;
   min-width: 0;
-  max-width: 100%;
+}
+
+/* One-line moves */
+.team-card li{
+  white-space: nowrap;
 }
