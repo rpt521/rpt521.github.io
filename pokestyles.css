@@ -123,7 +123,7 @@ h1 {
 
 .team-list{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 cards per row */
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
   gap: 14px;
   width: fit-content;                   /* keeps the grid compact */
   margin: 10px auto 0 auto;             /* centers the whole grid */
