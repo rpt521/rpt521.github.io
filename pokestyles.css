@@ -149,8 +149,8 @@ h1 {
 
 /* Sprite */
 .team-card img{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   image-rendering: pixelated;
   flex-shrink: 0;
 }
