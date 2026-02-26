@@ -146,8 +146,8 @@ h1 {
 }
 
 .team-card img{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   image-rendering: pixelated;
   flex-shrink: 0;   /* prevents squishing */
 }
