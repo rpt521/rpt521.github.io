@@ -122,9 +122,12 @@ h1 {
 }
 
 .team-list{
-  display: flex;
-  justify-content: center;   /* centers the card */
-  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 14px;
+  width: fit-content;                   /* keeps the grid compact */
+  margin: 10px auto 0 auto;             /* centers the whole grid */
+  justify-content: center;
 }
 
 .team-card{
