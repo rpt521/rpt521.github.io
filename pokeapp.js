@@ -201,9 +201,7 @@ function renderTeam() {
     img.src = member.sprite || "";
     img.alt = member.name;
 
-    const name = document.createElement("div");
-    name.className = "name";
-    name.textContent = member.name;
+  
 
     const ul = document.createElement("ul");
     member.moves.forEach((mv) => {
@@ -213,7 +211,7 @@ function renderTeam() {
     });
 
     card.appendChild(img);
-    card.appendChild(name);
+
     card.appendChild(ul);
 
     teamListEl.appendChild(card);
