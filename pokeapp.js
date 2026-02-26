@@ -217,6 +217,24 @@ function renderTeam() {
     teamListEl.appendChild(card);
   });
 }
+// used AI to write up a reset function post add to team
+function resetSearchUI(){
+  // clear input
+  searchInput.value = "";
+
+  // reset current pokemon
+  currentPokemon = null;
+
+  // restore placeholder image (your local png path)
+  pokemonImg.src = "assets/screenshots/pokemon0.png";
+  pokemonImg.alt = "MissingNo placeholder";
+
+  // clear moves back to placeholders
+  clearMoves();
+
+  // clear audio
+  resetAudio();
+}
 
 // -------------------- FETCH --------------------
 async function fetchPokemon(q) {
@@ -315,6 +333,7 @@ addToTeamBtn.addEventListener("click", () => {
 }
 
   renderTeam();
+  resetSearchUI();
 });
 
 // Initial UI state: keep your placeholder image; blank moves + disabled audio
