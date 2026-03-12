@@ -114,7 +114,7 @@ a:hover { text-decoration: underline; }
 
   /* allow browser to scale down from large source image */
   width: 240px;
-  height: auto;
+  height: 261px;
 
   /* preserve aspect ratio while cropping cleanly */
   object-fit: cover;
